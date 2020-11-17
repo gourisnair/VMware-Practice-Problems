@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int minDifference(int a[], int l) {
-    int min = a[0], diff = 0;
+    int min = INT_MAX, diff = 0;
     for(int i = 0; i < l; i++) {
         for(int j = i+1; j < l; j++) {
             diff = abs(a[i] - a[j]);
