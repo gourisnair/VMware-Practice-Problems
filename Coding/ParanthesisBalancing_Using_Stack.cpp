@@ -9,7 +9,7 @@ bool isBalanced(string s) {
             st.push(s[i]);
             continue;
         }
-        if(s.empty()) {
+        if(st.empty()) {
             return false;
         }
         switch(s[i]) {
