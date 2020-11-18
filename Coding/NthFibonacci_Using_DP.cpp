@@ -7,7 +7,7 @@ using namespace std;
 class Solution {
   public:
     long long int nthFibonacci(long long int n){
-        vector<long long int>dparr(n+2, 0);
+        vector<long long int>dparr(n+1, 0); //(n+1) to take care of the first fibonacci number 0;
         dparr[1] = 1;
         dparr[2] = 1;
         for(int i = 3; i <= n; i++) {
